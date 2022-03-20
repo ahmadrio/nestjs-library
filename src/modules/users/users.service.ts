@@ -38,7 +38,10 @@ export class UsersService {
     throw new NotFoundException(`User not found`);
   }
 
-  async update(id: number, updateUserDto: UpdateUserDto): Promise<any> {
+  async update(
+    id: number,
+    updateUserDto: UpdateUserDto,
+  ): Promise<[number, User[]]> {
     await this.findOne(id);
 
     if (await this.findByEmail(updateUserDto.email, id)) {

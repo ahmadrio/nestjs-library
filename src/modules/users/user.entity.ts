@@ -27,7 +27,7 @@ export class User extends Model {
 
   @BeforeCreate
   @BeforeUpdate
-  static async getAndSetPasswordAttribute(instance: User) {
+  static async getAndSetPasswordAttribute(instance: User): Promise<void> {
     instance.password = await bcrypt.hash(instance.password, 10);
   }
 }
