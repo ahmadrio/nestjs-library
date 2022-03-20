@@ -29,3 +29,7 @@ Ini adalah basic aplikasi perpustakaan dengan engine NestJS. Diperuntukan untuk 
 | `db:migrate` | Run migration |
 | `db:seed` | Run seeder |
 | `db:seed:undo:all` | Delete all table rows |
+
+## Referensi:
+
+- https://github.com/onwuvic/nest-blog-api

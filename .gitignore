@@ -34,5 +34,6 @@ lerna-debug.log*
 !.vscode/launch.json
 !.vscode/extensions.json
 
+# Referensi: https://github.com/kentloog/nestjs-sequelize-typescript
 .env
 /**/*.sqlite
